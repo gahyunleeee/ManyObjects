@@ -18,7 +18,7 @@ function draw() {
   // for (let i=0; i<movers.length; i++) {
   //   let mover = mevers[i];
   //   mover.upadate();
-  //   mever.show();
+  //   mover.show();
   // }
   //아래 for구문이랑 똑같은 의미임
 
@@ -30,6 +30,7 @@ for (let mover of movers) {
 
   if (mouseIsPressed) {
     let mousePos = createVector (mouseX,mouseY);
+
     for (let mover of movers) {
       mover.attractTo(mousePos);
     }
